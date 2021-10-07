@@ -1,7 +1,0 @@
--- 형변환 CAST
--- 더 공부한 뒤 커밋할것
-
-SELECT CAST(curdate() AS DATE) AS 'DATE';
-SELECT CAST(curdate() AS TIME) AS 'TIME';
-SELECT CAST('2020-10-19 12:35:29.123' AS DATETIME) AS 'DATETIME';
-
