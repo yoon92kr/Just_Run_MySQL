@@ -1,8 +1,8 @@
 use cookdb;
 
-with test(userid, total)
-as
-(select userid, sum(price*amount)
-from buytbl group by userid)
+WITH TEMP_TB(userid, total)
+AS
+(SELECT userid, sum(price*amount)
+FROM buytbl group by userid)
 
-select * from test order by total desc;
+select * from TEMP_TB order by total desc;
